@@ -13,7 +13,7 @@ public class HitCharacterScript : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if(collider.gameObject.tag == "Enemy")
+        if(collider.gameObject.tag == "Player")
         {
             scoreObject.GetComponent<ScoreScripts>().AddScore();
             Destroy(gameObject);
