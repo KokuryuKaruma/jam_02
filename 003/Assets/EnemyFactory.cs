@@ -40,6 +40,8 @@ public class EnemyFactory : MonoBehaviour
     private float interval;
     
     private float time = 0;
+
+    //private float limit = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,12 @@ public class EnemyFactory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //limit = maxlimit;
+
+		//if (enemyPrefab >= limit)
+		//{
+
+		//}
         time += Time.deltaTime;
 
         if (time > interval)
